@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: antiquewhite;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 52px 200px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding-right: 24px;
+  font-size: 12px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  height: 560px;
+  width: 1140px;
+  margin-right: 72px;
+  padding-bottom: 20px;
+}
+
+.section-1 {
+  display: flex;
+  gap: 44px;
+  padding: 72px 312px;
+}
+
+.row {
+  display: flex;
+}
+
+.row img {
+  height: 200px;
+}
+
+.color {
+  color: orange;
+}
+
+.architect {
+  height: 640px;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.description > div {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.big {
+  text-align: center;
+}
+
+.icons-title {
+  padding: 64px 200px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.icons > div {
+  border: 2px solid orange;
+  padding: 4px;
+}
+
+.picture {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.picture > img {
+  filter: grayscale(100%);
+}
+
+.sponser {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: antiquewhite;
+  height: 80px;
+  margin: 80px;
+}
+
+button {
+  color: white;
+  background-color: orange;
+  height: 44px;
+  width: 32;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 688px) {
+  .icons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .icons > div {
+    width: fit-content;
+  }
+  nav {
+    justify-content: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    justify-content: none;
+  }
+  .picture {
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .big {
+    width: fit-content;
+  }
+}
